@@ -44,7 +44,7 @@ public class Whitelist extends JavaPlugin {
     private final String PROP_SQL_QUERY_ADD = "sql-query-add";
     private final String PROP_SQL_QUERY_REMOVE = "sql-query-remove";
     private final String FILE_WHITELIST = "whitelist.txt";
-    private final String FILE_CONFIG = "whitelist.properties";
+    private final String FILE_CONFIG = "config.yml";
 
     //Attributes
     private FileWatcher m_Watcher;
@@ -229,7 +229,7 @@ public class Whitelist extends JavaPlugin {
             }
             reader.close();
 
-            //2. Load fWhitelist.properties
+            //2. Load fConfig.yml
             Properties propConfig = new Properties();
             BufferedInputStream stream = new BufferedInputStream(new FileInputStream(m_Folder.getAbsolutePath() + File.separator + FILE_CONFIG));
             propConfig.load(stream);

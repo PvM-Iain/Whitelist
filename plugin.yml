@@ -1,6 +1,6 @@
 name: Whitelist
 main: com.bitzcraftonline.whitelist.Whitelist
-version: 1.1.1.0000a
+version: 1.1.1.0000b
 depend: [Vault]
 commands:
   whitelist help:
@@ -12,3 +12,4 @@ permissions:
       whitelist.admin: true
       whitelist.add: true
       whitelist.remove: true
+      whitelist.list: true

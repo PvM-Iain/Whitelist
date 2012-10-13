@@ -203,7 +203,7 @@ public class Whitelist extends JavaPlugin {
             log.info(name + " - " + sender.getName() + " has deactivated the whitelist.");
             sender.sendMessage(ChatColor.RED + "Whitelist deactivated!");
             return true;
-        } if (args[0].equalsIgnoreCase("whitelist list") && hasPerm(sender, "whitelist.admin")) {
+        } if (args[0].equalsIgnoreCase("whitelist list") && hasPerm(sender, "whitelist.list")) {
             if ( !isListCommandDisabled() )
                 sender.sendMessage(ChatColor.RED + "List command is disabled!");
             else

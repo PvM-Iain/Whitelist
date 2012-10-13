@@ -171,7 +171,7 @@ public class Whitelist extends JavaPlugin {
                 sender.sendMessage(ChatColor.RED + "Could not reload whitelist...");
             return true;
         } else if (args[0].equalsIgnoreCase("whitelist add") && hasPerm(sender, "whitelist.add")) {
-            if ( args.length < 2 ) {
+            if ( args.length < 3 ) {
                 sender.sendMessage(ChatColor.RED + "Parameter missing: Player name");
             } else {
                 if (addPlayerToWhitelist(args[1])) {
@@ -182,7 +182,7 @@ public class Whitelist extends JavaPlugin {
             }
             return true;
         } else if(args[0].equalsIgnoreCase("whitelist remove") && hasPerm(sender, "whitelist.remove")) {
-            if ( args.length < 2 ) {
+            if ( args.length < 3 ) {
                 sender.sendMessage(ChatColor.RED + "Parameter missing: Player name");
             }
             else {
